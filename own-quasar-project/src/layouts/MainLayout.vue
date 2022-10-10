@@ -15,8 +15,8 @@
           Sem Radoes
         </q-toolbar-title>
         <div class="subpages">
-          <div class="nav" @click="">Projects</div>
-          <div class="nav" @click="">More info</div>
+          <div class="nav" >Projects</div>
+          <div class="nav" >More info</div>
         </div>
         <!-- <div>Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
@@ -50,7 +50,7 @@
 <style>
   .subpages{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     margin-right: auto;
   }
 </style>
