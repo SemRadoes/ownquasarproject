@@ -14,7 +14,10 @@
         <q-toolbar-title>
           Sem Radoes
         </q-toolbar-title>
-
+        <div class="subpages">
+          <div class="nav" @click="">Projects</div>
+          <div class="nav" @click="">More info</div>
+        </div>
         <!-- <div>Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
     </q-header>
@@ -44,7 +47,13 @@
     </q-page-container>
   </q-layout>
 </template>
-
+<style>
+  .subpages{
+    display: flex;
+    gap: 5rem;
+    margin-right: auto;
+  }
+</style>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
