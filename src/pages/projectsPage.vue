@@ -31,3 +31,14 @@
   gap: 1rem;
 }
 </style>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { useProjects } from 'src/services/projects.services';
+export default defineComponent({
+  setup() {
+    const { addProject } = useProjects();
+    
+  },
+});
+</script>
