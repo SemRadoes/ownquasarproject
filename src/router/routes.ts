@@ -4,7 +4,7 @@ export const route_names = {
   projects: 'projects',
   more_info: 'more info',
   addProject: 'add project',
-  projectDetails: 
+  projectDetails: 'project details'
 };
 const routes: RouteRecordRaw[] = [
   {
