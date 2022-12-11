@@ -1,9 +1,9 @@
 <template>
   <div class="headbar">
     <h1 class="title">Projects</h1>
-    <StyledButton green style="height:fit-content; align-self:center">Add Project +</StyledButton>
+    <StyledButton green style="height:fit-content; align-self:center" @click="newProject()">Add Project +</StyledButton>
   </div>
-  <CustomNotification class="notification"></CustomNotification>
+  <CustomNotification class="notification" style="display:none;"></CustomNotification>
   <div class="projects">
     <div
       class="project"
@@ -53,11 +53,16 @@ export default defineComponent({
     const  onClickProject = () => {
       void router.push({ name: route_names.projectDetails });
     }
+    const  newProject = () => {
+      const notification = document.querySelector('.notification');
+      notification?.setAttribute('style', 'display:flex');
+    }
     
     return {
       projects,
       addProject,
       onClickProject,
+      newProject
     }
   },
 

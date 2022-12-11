@@ -30,7 +30,7 @@
       </div>
       <div class="buttons">
         <StyledButton green>Confirm</StyledButton>
-        <StyledButton primary>Cancel</StyledButton>
+        <StyledButton primary @click="closeProjectPopup()">Cancel</StyledButton>
       </div>
     </div>
   </div>
@@ -78,6 +78,16 @@ import StyledButton from './StyledButton.vue'
 export default defineComponent({
   components: {
     StyledButton,
-  }
+  },
+  setup() {
+    const closeProjectPopup = () => {
+      const popUp = document.querySelector('.alert-popup');
+      popUp?.setAttribute('style', 'display:none');
+    }
+    return {
+      closeProjectPopup
+    }
+  },
+
 });
 </script>
