@@ -3,6 +3,7 @@
     :class="{
       primary: primary,
       negative: negative,
+      green: green
     }"
   >
     <slot />
@@ -19,6 +20,10 @@ export default defineComponent({
       default: false,
     },
     negative: {
+      type: Boolean,
+      default: false,
+    },
+    green: {
       type: Boolean,
       default: false,
     },
@@ -61,4 +66,14 @@ button {
     color: white;
   }
 }
+.green {
+  background-color: darkgreen;
+  color: white;
+
+  &:hover {
+    background-color: rgb(64, 141, 12);
+    color: white;
+  }
+}
+
 </style>

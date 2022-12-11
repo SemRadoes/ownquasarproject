@@ -1,4 +1,3 @@
-import { Project } from 'src/components/models'
 import { ref } from 'vue'
 
 const projects = ref([
